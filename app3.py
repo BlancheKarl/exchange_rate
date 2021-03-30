@@ -8,6 +8,10 @@ import time
 import json
 from apscheduler.schedulers.background import BackgroundScheduler
 from flask_apscheduler import APScheduler
+import json
+import pymysql
+from flask import render_template
+from flask_bootstrap import Bootstrap
 
 
 app = Flask(__name__)
@@ -43,13 +47,25 @@ def get_data():
 
 @app.route('/todo/api/v1.0/exrate', methods = ['GET'])
 def get_exrate():
+    exrate = get_data()
+    with open('data.json', 'w', encoding='utf-8') as file:
+        file.write(json.dumps(exrate, indent=2, ensure_ascii=False))
     return jsonify({'exchange_rate':exrate})
 
+@app.route('/')
+def index():
+    conn = pymysql.connect(host='localhost', user='root', password='lizheng980316',port=3306, db='xdb', charset='utf8')
+    cur = conn.cursor()
+    sql = "SELECT * FROM xdb.exchange_rate"
+    cur.execute(sql)
+    u = cur.fetchall()
+    conn.close()
+    return render_template('Homepage.html', u=u)
+
 if __name__ == '__main__':
-    exrate = get_data()
     scheduler = BackgroundScheduler()
     # add task with interval of 2 seconds
-    scheduler.add_job(get_data, 'interval', seconds=100)
+    scheduler.add_job(get_exrate, 'interval', seconds=100)
     scheduler.start()
     app.run(debug=False)
 
