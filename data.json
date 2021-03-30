@@ -1,0 +1,112 @@
+[
+  {
+    "currency_name": "Currency Name",
+    "buying_rate": "Buying Rate",
+    "selling_rate": "Selling Rate"
+  },
+  {
+    "currency_name": "AUD",
+    "buying_rate": "501.11",
+    "selling_rate": "504.8"
+  },
+  {
+    "currency_name": "CAD",
+    "buying_rate": "519.31",
+    "selling_rate": "523.14"
+  },
+  {
+    "currency_name": "CHF",
+    "buying_rate": "696.57",
+    "selling_rate": "701.47"
+  },
+  {
+    "currency_name": "DKK",
+    "buying_rate": "103.97",
+    "selling_rate": "104.81"
+  },
+  {
+    "currency_name": "EUR",
+    "buying_rate": "773.74",
+    "selling_rate": "779.45"
+  },
+  {
+    "currency_name": "GBP",
+    "buying_rate": "901.76",
+    "selling_rate": "908.4"
+  },
+  {
+    "currency_name": "HKD",
+    "buying_rate": "83.62",
+    "selling_rate": "83.96"
+  },
+  {
+    "currency_name": "JPY",
+    "buying_rate": "5.9339",
+    "selling_rate": "5.9775"
+  },
+  {
+    "currency_name": "KRW",
+    "buying_rate": "0.5699",
+    "selling_rate": "0.5745"
+  },
+  {
+    "currency_name": "MOP",
+    "buying_rate": "81.29",
+    "selling_rate": "81.61"
+  },
+  {
+    "currency_name": "MYR",
+    "buying_rate": "157.75",
+    "selling_rate": "159.17"
+  },
+  {
+    "currency_name": "NOK",
+    "buying_rate": "76.64",
+    "selling_rate": "77.26"
+  },
+  {
+    "currency_name": "NZD",
+    "buying_rate": "466.05",
+    "selling_rate": "469.33"
+  },
+  {
+    "currency_name": "PHP",
+    "buying_rate": "13.33",
+    "selling_rate": "13.49"
+  },
+  {
+    "currency_name": "RUB",
+    "buying_rate": "8.82",
+    "selling_rate": "8.9"
+  },
+  {
+    "currency_name": "SEK",
+    "buying_rate": "76.27",
+    "selling_rate": "76.89"
+  },
+  {
+    "currency_name": "SGD",
+    "buying_rate": "481.17",
+    "selling_rate": "484.55"
+  },
+  {
+    "currency_name": "THB",
+    "buying_rate": "21.07",
+    "selling_rate": "21.23"
+  },
+  {
+    "currency_name": "TRY",
+    "buying_rate": "85.18",
+    "selling_rate": "85.86"
+  },
+  {
+    "currency_name": "USD",
+    "buying_rate": "649.43",
+    "selling_rate": "652.18"
+  },
+  {
+    "currency_name": "ZAR",
+    "buying_rate": "43.17",
+    "selling_rate": "43.47"
+  }
+]
